@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+
+<style> 
+    /**** top navigation bar styles ****/
+    .topnav{
+        display:block;
+        padding: 15px;
+    }
+
+    ul{
+        list-style-type: none;
+        margin:0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(255, 255, 255);
+    }
+
+    li a {
+        display: block;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        }
+        
+    li a:hover {
+        text-decoration-line: underline;
+    }
+
+    .center{
+        padding-top:109px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #left-header{
+        float:left;
+        opacity: 0.75;
+    }
+    
+    #right-header{
+        float:right;
+    }
+
+    /*** searchbox styles ***/
+    .search-box{
+        background-color: #222;
+        border-color: green;
+        position:absolute;
+        height: 30px;
+        border-radius: 40px;
+        padding: 10px;
+    }
+    
+    .search-input{
+        border: none;
+        background-color: transparent;
+        font-size: 16px;
+    }
+</style>
+
+<body> 
+    <div class="topnav">
+        <ul>
+            <li id="left-header"> <a target=_blank href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a> </li>
+            <li id="left-header"> <a target=_blank href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a> </li>
+            <li id="right-header"> <a href="#Images">Images</a> </li>
+            <li id="right-header"> <a target=_blank href="https://www.gmail.com">Gmail</a> </li>
+        </ul>
+    </div>
+
+    <div> 
+        <img src="google_logo.png" alt="google-logo" class="center" height=92px width=272px>
+    </div>
+
+    <!-- 
+    <form> 
+        <div class="search-box">
+            <input class="search-input" type="text" name="google-search">
+        </div>
+    </form> -->
+
+</body>
