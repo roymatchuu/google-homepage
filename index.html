@@ -4,7 +4,8 @@
     /**** top navigation bar styles ****/
     .topnav{
         display:block;
-        padding: 15px;
+        padding: 10px;
+        font-size: 13px;
     }
 
     ul{
@@ -22,8 +23,7 @@
         padding: 14px 16px;
         text-decoration: none;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 13px;
-        }
+    }
         
     li a:hover {
         text-decoration-line: underline;
@@ -45,22 +45,87 @@
         float:right;
     }
 
-    /*** searchbox styles ***/
-    .search-box{
-        background-color: #222;
-        border-color: green;
-        position:absolute;
-        height: 30px;
-        border-radius: 40px;
-        padding: 10px;
-    }
-    
-    .search-input{
+    /*** search box styles ***/
+    #search-box{
+        display: block;
         border: none;
         background-color: transparent;
-        font-size: 16px;
+        margin: 2.0% auto 2.2% auto;
+        width: 550px;
+        height: 40px;
+        border-radius: 50px;
+        border: 1px solid rgb(218, 218, 218);
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
     }
+
+    .search-input{
+        display: flex;
+        border: none;
+        background-color: transparent;
+        margin: 1% auto;
+        width: 500px;
+        height: 30px;
+        outline:none
+    }
+
+    input{
+        margin-top:-37px;
+        font-size:16px;
+    }
+
+    /*** button styles ***/
+    #buttons{
+        margin-top: 1% auto;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+    }
+
+    .btn {
+        font-family: arial, sans-serif;
+        color: #5f6368;
+        margin: 11px 4px;
+        height: 36px;
+        width: 132px;
+        border-radius: 4px;
+        border: none;
+        background: #f2f2f2;
+        font-size: 14px;
+        outline:none;
+    }
+
+    .btn:active{
+        transform: translateY(2px);
+    }
+
+    /*** footer styles ***/
+    .footer {
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        background: #f2f2f2;
+        font-size: 14px;
+        line-height: 20px;
+        border-top: 1px solid #e4e4e4;
+    }
+
+    #left-footer{
+        float:left;
+        opacity:0.75;
+    }
+    #right-footer{
+        float:right;
+        opacity:0.75;
+    }
+    
 </style>
+
+<head> 
+    <title> Google Homepage</title>
+</head>
 
 <body> 
     <div class="topnav">
@@ -76,11 +141,26 @@
         <img src="google_logo.png" alt="google-logo" class="center" height=92px width=272px>
     </div>
 
-    <!-- 
+    
     <form> 
-        <div class="search-box">
-            <input class="search-input" type="text" name="google-search">
+        <div id="search-box">
+            <input class="search-input" type="text" name="google-search" autocomplete="off">
         </div>
-    </form> -->
+    </form>
 
+    <div id="buttons">
+        <button class="btn" type="button">Google Search</button> 
+        <button class="btn" type="button">I'm Feeling Lucky</button> 
+    </div>
+    
+    <div class="footer">
+        <ul>
+            <li id="left-footer"> <a href="#advertising">Advertising</a> </li>
+            <li id="left-footer"> <a href="#business">Business</a> </li>
+            <li id="left-footer"> <a href="#how-search-works">How Search Works</a> </li>            
+            <li id="right-footer"> <a href="#settings">Settings</a> </li>
+            <li id="right-footer"> <a href="#terms">Terms</a> </li>
+            <li id="right-footer"> <a href="#privacy">Privacy</a> </li>
+        </ul>
+    </div>
 </body>
